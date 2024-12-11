@@ -134,7 +134,7 @@ def main():
 
     if option == "Train":
         st.subheader("Training Phase")
-        folder_path = st.text_input("Enter path to images folder:", r'https://github.com/rajendraambati/Real_time_face_recognition/tree/main/ImagesAttendance')
+        folder_path = st.text_input("Enter path to images folder:", 'ImagesAttendance')
         if st.button("Train Model"):
             if folder_path:
                 add_faces_from_folder(folder_path)  # Load images and labels from folders
